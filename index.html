@@ -11,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Noto+Sans+TC&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <div class="bar">
+      <div class="bar-container">
+        <div class="bar-actually" id="myBar"></div>
+      </div>
+    </div>
     <nav id="side-nav" class="navbar navbar-expand-lg navbar-light bg-lightgray p-4 p-lg-5 fixed-top">
       <a class="navbar-brand" href="#"><img src="images/logo/brand2.png" alt="" width="150px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +41,7 @@
         </ul>
       </div>
     </nav>
+    
 
     <div class="container-fluid p-0" data-spy="scroll" data-target="#side-nav" data-offset="">
       <section id="info" class="section-content d-flex align-items-center bg-computer">
@@ -64,7 +70,7 @@
               <h6>October 2019 - Januery 2020</h6>
               <div class="row d-flex flex-column flex-lg-row">
                 <div class="col-12 col-lg-9 order-2 order-lg-1">
-                  <p>為期三個半月的時間學習前端的HTML、CSS、JavaScript、JQuery、Ajax、Bootstrap；後端的PHP、MySQL以及視覺設計的Photoshop、Illustartor。</p>
+                  <p>為期三個半月的時間學習前端的HTML、CSS、JavaScript、JQuery、Ajax、Bootstrap；後端的PHP、MySQL以及視覺設計的Photoshop、Illustartor；並在結訓前獨自開一個專體網站。</p>
                 </div>
                 <div class="col-12 col-lg-3 order-1 order-lg-2">
                   <img src="images/logo/wda.png" alt="wda_logo" title="wda_logo" class="float-lg-right my-2" />
@@ -141,6 +147,7 @@
             <img src="images/logo/css.jpg" alt="css" title="css" width="100px" />
             <img src="images/logo/js.jpg" alt="js" title="js" width="100px" />
             <img src="images/logo/jq.jpg" alt="jq" title="jq" width="100px" />
+            <img src="images/logo/bs.jpg" alt="bs" title="bs" width="100px" />
           </div>
         </div>
         <div class="wow fadeIn" data-wow-delay="1s">
@@ -168,101 +175,119 @@
       </section>
       <section id="portfolio" class="section-content d-flex flex-column justify-content-center slide">
         <h2 class="text-blue">Portfolio 作品集</h2>
-        <div class="row ">
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="0s">
-              <a href="http://220.128.133.15/s1080406/project/" target="_blank">
-                <img src="images/porfolio/project.jpg" class="card-img-top" alt="project" title="project" />
-              </a>
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">專題網站 > J's Hotel</h5>
-                <p class="card-text">運用職訓期間所學各項技術，開發完成一個旅館的網站及管理後台。<br />(管理後台請點選專題網站右下方的圓形LOGO，並輸入admin/1234進入)</p>
-                <p class="card-text font-weight-bold">主要運用:PHP、MySQL、Bootstrap、JavaScript、JQuery、Ajax</p>
+        <ul class="list-unstyled">
+          <li class="media flex-column flex-md-row wow fadeIn" data-wow-delay="0.5s">
+            <img src="images/porfolio/project_s.jpg" class="mr-3 portfolio_img " alt="project" title="project" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">專題網站 > J's Hotel 
+                <a href="http://220.128.133.15/s1080406/project/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>運用職訓期間所學各項技術，開發完成一個旅館的網站及管理後台。<br />
+              (管理後台請點選專題網站右下方的圓形LOGO，並輸入admin/1234進入)</p>
+              <div>
+                <span class="portfolio-skill">PHP</span>
+                <span class="portfolio-skill">MySQL</span>
+                <span class="portfolio-skill">Bootstrap</span>
+                <span class="portfolio-skill">JavaScript</span>
+                <span class="portfolio-skill">JQuery</span>
+                <span class="portfolio-skill">Ajax</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="0.5s">
-              <a href="http://220.128.133.15/s1080406/js_color_picker/" target="_blank">
-                <img src="images/porfolio/color_picker.jpg" class="card-img-top" alt="color_picker" title="color_picker" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title ">JS > color picker</h5>
-                <p class="card-text ">使用JavaScript開發出調色盤，並可透過手動輸入或Slide Bar選取數值及隨機選色功能。</p>
-                <p class="card-text font-weight-bold">主要運用:JavaScript</p>
+          </li>
+          <li class="media flex-column flex-md-row my-4 wow fadeIn" data-wow-delay="1s">
+            <img src="images/porfolio/color_picker_s.jpg" class="mr-3 portfolio_img " alt="color_picker" title="color_picker" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">JS > color picker 
+                <a href="http://220.128.133.15/s1080406/js_color_picker/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>使用JavaScript開發出調色盤，並可透過手動輸入或Slide Bar選取數值及隨機選色功能。</p>
+              <div>
+                <span class="portfolio-skill">JavaScript</span>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="1s">
-              <a href="http://220.128.133.15/s1080406/js_digital_timer/" target="_blank">
-                <img src="images/porfolio/digital_timer.jpg" class="card-img-top" alt="digital_timer" title="digital_timer" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">JS > 倒數計時器</h5>
-                <p class="card-text">運用JavaScript抓取.計算時間及替換圖片，可運用在特殊節日的倒數計時上。</p>
-                <p class="card-text font-weight-bold">主要運用:JavaScript</p>
+          </li>
+          <li class="media flex-column flex-md-row wow fadeIn" data-wow-delay="1.5s">
+            <img src="images/porfolio/digital_timer_s.jpg" class="mr-3 portfolio_img " alt="digital_timer" title="digital_timer" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">JS > 倒數計時器 
+                <a href="http://220.128.133.15/s1080406/js_digital_timer/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>運用JavaScript抓取.計算時間及替換圖片，可運用在特殊節日的倒數計時上。</p>
+              <div>
+                <span class="portfolio-skill">JavaScript</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="1.5s">
-              <a href="http://220.128.133.15/s1080406/js_analog_clock/" target="_blank">
-                <img src="images/porfolio/analog_clock.jpg" class="card-img-top" alt="analog_clock" title="analog_clock" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">JS > 時鐘</h5>
-                <p class="card-text">使用動畫效果JavaScript搭配CSS動畫效果完成類比時鐘。</p>
-                <p class="card-text font-weight-bold">主要運用:JavaScript</p>
+          </li>
+          <li class="media flex-column flex-md-row my-4 wow fadeIn" data-wow-delay="0.5s">
+            <img src="images/porfolio/analog_clock_s.jpg" class="mr-3 portfolio_img " alt="analog_clock" title="analog_clock" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">JS > 時鐘 
+                <a href="http://220.128.133.15/s1080406/js_analog_clock/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>使用動畫效果JavaScript搭配CSS動畫效果完成類比時鐘。</p>
+              <div>
+                <span class="portfolio-skill">JavaScript</span>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="0s">
-              <a href="http://220.128.133.15/s1080406/js_story_game/" target="_blank">
-                <img src="images/porfolio/game.jpg" class="card-img-top" alt="game" title="game" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">JS > 二分之一小遊戲</h5>
-                <p class="card-text">運用基本的if-else並搭配Sweet Alert套件開發的簡易小遊戲。</p>
-                <p class="card-text font-weight-bold">主要運用:JavaScript</p>
+          </li>
+          <li class="media flex-column flex-md-row wow fadeIn" data-wow-delay="1s">
+            <img src="images/porfolio/story_game_s.jpg" class="mr-3 portfolio_img " alt="story_game" title="story_game" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">JS > 二分之一小遊戲 
+                <a href="http://220.128.133.15/s1080406/js_story_game/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>運用基本的if-else並搭配Sweet Alert套件開發的簡易小遊戲。</p>
+              <div>
+                <span class="portfolio-skill">JavaScript</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="0.5s">
-              <a href="http://220.128.133.15/s1080406/js_open_api/" target="_blank">
-                <img src="images/porfolio/api.jpg" class="card-img-top" alt="api" title="api" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">JQ > Open-Data介接</h5>
-                <p class="card-text">透過JQuery的getJSON抓取中央氣象局的未來36小時天氣資料。</p>
-                <p class="card-text font-weight-bold">主要運用:JQuery、Ajax</p>
+          </li>
+          <li class="media flex-column flex-md-row my-4 wow fadeIn" data-wow-delay="0.5s">
+            <img src="images/porfolio/open_api_s.jpg" class="mr-3 portfolio_img " alt="open_api" title="open_api" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">JQ > Open-Data介接 
+                <a href="http://220.128.133.15/s1080406/js_open_api/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>透過JQuery的getJSON抓取中央氣象局的未來36小時天氣資料。</p>
+              <div>
+                <span class="portfolio-skill">JQuery</span>
+                <span class="portfolio-skill">Ajax</span>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mt-3">
-            <div class="card wow fadeIn" data-wow-delay="1s">
-              <a href="http://220.128.133.15/s1080406/php_vcard/" target="_blank">
-                <img src="images/porfolio/vcard.jpg" class="card-img-top" alt="vcard" title="vcard" />
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">PHP > Vcard</h5>
-                <p class="card-text">以上傳圖片及Session完成的簡易名片。</p>
-                <p class="card-text font-weight-bold">主要運用:PHP</p>
+          </li>
+          <li class="media flex-column flex-md-row my-4 wow fadeIn" data-wow-delay="0.5s">
+            <img src="images/porfolio/vcard_s.jpg" class="mr-3 portfolio_img " alt="vcard" title="vcard" />
+            <div class="media-body ">
+              <h5 class="mx-0 my-2 ">PHP > Vcard
+                <a href="http://220.128.133.15/s1080406/php_vcard/" target="_blank">
+                  <i class="fas fa-external-link-alt mx-2"></i>
+                </a>
+              </h5>
+              <p>以上傳圖片及Session完成的簡易名片。</p>
+              <div>
+                <span class="portfolio-skill">PHP</span>
+
               </div>
             </div>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
+          </li>
+
+        </ul>
       </section>
     </div>
+    
+    
 
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/popper.min.js"></script>
@@ -288,6 +313,16 @@
         typeSpeed: 50,
         showCursor: false,
       });
+    </script>
+    <script>
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+        var winScroll =  document.body.scrollTop || document.documentElement.scrollTop; 
+        //當下可視網頁最高點到網頁頂端的距離。
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight; //網頁總高度-使用者可視高度
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.height = scrolled + "%";
+      }
     </script>
   </body>
 </html>
