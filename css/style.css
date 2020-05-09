@@ -48,11 +48,11 @@ body {
     margin: 1.5rem 0rem;
   }
 }
-@media (max-height: 690px) {
+@media (max-width: 991px) {
 
   #navbarNav .navbar-nav .nav-item .nav-link {
     display: block;
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
   }
 }
 
