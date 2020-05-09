@@ -48,7 +48,6 @@ body {
     margin: 1.5rem 0rem;
   }
 }
-
 @media (max-height: 690px) {
 
   #navbarNav .navbar-nav .nav-item .nav-link {
@@ -56,6 +55,7 @@ body {
     margin: 1rem 0rem;
   }
 }
+
 
 .navbar-light .navbar-nav .nav-link.active {
   color: #265597 !important;
@@ -227,24 +227,25 @@ ul.timeline > li:before {
 }
 
 /*進度條*/
+@media (min-width: 992px){
+  .bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 3px;
+    background-color: #f1f1f1;
+  }
+  /* The progress container (grey background) */
+  .bar-container {
+    width: 3px;
+    height: 100vh;
+    background: #f4f4f3;
+  }
 
-.bar {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 3px;
-  background-color: #f1f1f1;
-}
-/* The progress container (grey background) */
-.bar-container {
-  width: 3px;
-  height: 100vh;
-  background: #f4f4f3;
-}
-
-/* The progress bar (scroll indicator) */
-.bar-actually {
-  height: 0;
-  background: #265597;
-  width: 3px;
+  /* The progress bar (scroll indicator) */
+  .bar-actually {
+    height: 0;
+    background: #265597;
+    width: 3px;
+  }
 }
